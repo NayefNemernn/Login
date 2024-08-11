@@ -1,13 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './App.css'
 import Form from './components/Form'
+import Counter from './Counter'
 
-var isLogin = false
+var isLogin = true
 
 function App() {
+
   return (
     <>
-      <Form areUlogin = {isLogin}/>
+      <Form areUlogin = {isLogin} />
+      <Counter />
     </>
   )
 }

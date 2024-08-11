@@ -1,5 +1,6 @@
 import React from "react";
 import Input from "./Input";
+import Btn from "./Btn";
 
 function Form (props){
     return <>
@@ -8,7 +9,7 @@ function Form (props){
         <Input type ='text' placeholder ='Username'/>
         <Input type ='password' placeholder ='Password'/>
         {!props.areUlogin && <Input type ='password' placeholder ='Confirm Password'/>}
-        <button type="submit">{props.areUlogin ? 'Login' : 'Register'}</button>
+        <Btn />
     </form>
     </>
 }
